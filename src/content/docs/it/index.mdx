@@ -1,0 +1,67 @@
+---
+title: Tauri 2.0
+description: Il toolkit per la creazione di app multipiattaforma
+i18nReady: true
+editUrl: false
+lastUpdated: false
+template: splash
+tableOfContents: false
+prev: false
+next: false
+hero:
+  tagline: Crea piccole, veloci e sicure applicazioni multipiattaforma
+  image:
+    file: ../../../assets/logo-outline.svg
+  actions:
+    - text: Per iniziare
+      link: /start/
+      icon: right-arrow
+      variant: primary
+    - text: Documentazione Tauri 1.0
+      link: https://v1.tauri.app
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import Cta from '@fragments/cta.mdx';
+
+<div class="hero-bg">
+  <div class="bg-logo"></div>
+  <div class="bg-grad"></div>
+  <div class="bg-grad-red"></div>
+</div>
+
+<div class="lp-cta-card">
+  <Card title="Crea un nuovo progetto" icon="rocket">
+    <Cta />
+  </Card>
+</div>
+
+<CardGrid>
+  <Card title="Indipendente dal Frontend" icon="rocket">
+    Porta il tuo stack web esistente su Tauri o inizia quel nuovo progetto.
+    Tauri supporta qualsiasi framework frontend, quindi non è necessario
+    modificare il tuo stack.
+  </Card>
+  <Card title="Multipiattaforma" icon="rocket">
+    Crea la tua app per Linux, macOS, Windows, Android e iOS - tutto da una
+    singola codebase.
+  </Card>
+  <Card title="Comunicazione Inter-Processo" icon="rocket">
+    Scrivi il tuo frontend in JavaScript, la logica dell'applicazione in Rust e
+    integra profondamente nel sistema con Swift e Kotlin.
+  </Card>
+  <Card title="Massima Sicurezza" icon="rocket">
+    Al centro delle attenzioni del team di Tauri, che guida le nostre massime
+    priorità e le innovazioni più importanti.
+  </Card>
+  <Card title="Dimensione Minima" icon="rocket">
+    Utilizzando il renderer web nativo del sistema operativo, le dimensioni di
+    un'app Tauri possono essere ridotte a soli 600KB.
+  </Card>
+  <Card title="Basato su Rust" icon="rocket">
+    Con prestazioni e sicurezza al primo posto, Rust è il linguaggio ideale per
+    la prossima generazione di applicazioni.
+  </Card>
+</CardGrid>
